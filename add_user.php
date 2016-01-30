@@ -1,5 +1,5 @@
 <?php
-require "db_connection.php";
+require "connection.php";
 print_r($_POST);
 
 if (isset($_POST['email'])) {
@@ -26,7 +26,7 @@ if (isset($_POST['email'])) {
 
 
 
-    $sql_stmt = "INSERT INTO user_tbl "
+    $sql_stmt = "INSERT INTO user "
         . "(firstname, "
         . "lastname, "
         . "email, "
@@ -83,71 +83,86 @@ if (isset($_POST['email'])) {
 else {
 
 
-    echo "        <div id='newuser' >
-            <form method='POST' action='add_user.php'>
-                <table >
-                    <tbody>
-                        <tr>
-                            <td colspan=2>New User</td>
-                        </tr>
-                        <tr>
-                            <td>First Name</td>
-                            <td><input type='text' name='firstname' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>Last Name</td>
-                            <td><input type='text' name='lastname' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>email</td>
-                            <td><input type='text' name='email' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td><input type='password' name='password' value='' size='25'/></td>
-                        </tr>
-                        <tr>
-                            <td>Confirm Password</td>
-                            <td><input type='password' name='password' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td><input type='text' name='address' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>City</td>
-                            <td><input type='text' name='city' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>State</td>
-                            <td><input type='text' name='state' value='' size='25' /></td>
-                        </tr>
-                        <tr>
-                            <td>Zip</td>
-                            <td><input type='text' name='zip' value='' size='25' /></td>
-                        </tr>
-
-                        <tr>
-                            <td></td>
-                            <td><input type='submit' value='Enter' name='newusersubmit' /></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
-
-        </div>";
+    echo ("
+   ");
 
 }
 
 ?>
 
 <html>
-<head>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="script.js"></script>
-</head>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="styles/blog.css" rel="stylesheet">
+    <title>Login</title>
 <body>
+<div class="container"><!-- container class is used to centered  the body of the browser with some decent width-->
+    <div class="row"><!-- row class is used for grid system in Bootstrap-->
+        <div class="col-md-4 col-md-offset-4"><!--col-md-4 is used to create the no of colums in the grid also use for medimum and large devices-->
+            <div class="login-panel panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Registration</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" method="post" action="add_user.php">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="First Name" name="firstname" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Last Name" name="lastname" type="text" autofocus>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" name="pass" type="password" value="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Confirm Password" name="pass" type="password" value="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Address" name="address" type="text" value="">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="City" name="city" type="text" value="">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="State" name="state" type="text" value="">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Zip" name="zip" type="text" value="">
+                            </div>
+
+
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="register" name="register" >
+
+                        </fieldset>
+                    </form>
+                    <center><b>Already registered ?</b> <br></b><a href="login.php">Login here</a></center><!--for centered text-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

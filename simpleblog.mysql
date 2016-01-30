@@ -1,0 +1,26 @@
+
+CREATE DATABASE IF NOT EXISTS simpleblog;
+
+USE simpleblog;
+
+CREATE TABLE user
+(firstname VARCHAR(50),
+ lastname VARCHAR(50),
+ email VARCHAR (50),
+ password VARCHAR(255),
+ address VARCHAR (50),
+ city VARCHAR (50),
+ state VARCHAR (50),
+ zip INT (10),
+ user_id INT(10) NOT NULL AUTO_INCREMENT,
+ PRIMARY KEY (user_id)
+) Engine = InnoDB;
+
+CREATE TABLE blog
+(
+ title TEXT NOT NULL,
+ summary TEXT NOT NULL,
+ content TEXT NOT NULL,
+ blog_id INT(10) NOT NULL AUTO_INCREMENT,
+ PRIMARY KEY(blog_id)
+)   Engine = InnoDB;
