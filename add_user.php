@@ -4,10 +4,10 @@ print_r($_POST);
 
 if (isset($_POST['email'])) {
     $pwd = $_POST['password'];
-
+/*
     echo ('<a href="login.php">Login</a><a href="add_user.php">New User</a> ');
 ///////////
-    $sql_check = "Select email From user_tbl Where email Like :checkEmail";
+    $sql_check = "Select email From user Where email Like :checkEmail";
 
 
     $checkEmail = filter_var($_POST['email'],FILTER_SANITIZE_STRING);
@@ -21,7 +21,7 @@ if (isset($_POST['email'])) {
     {
         unset($_POST);
         header("Location: errorMessage.php");
-    }
+    }*/
 //////////
 
 
@@ -48,6 +48,7 @@ if (isset($_POST['email'])) {
     //prepare the sql statement
     $sqlh = $pdo->prepare($sql_stmt);
 
+    echo("Made IT");
     //sanitize the input
     $in_firstname = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
     $in_lastname = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
@@ -83,24 +84,18 @@ if (isset($_POST['email'])) {
 else {
 
 
-    echo ("
-   ");
-
-}
-
-?>
-
-<html>
+    echo ('<html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
     <!-- Bootstrap core CSS -->
     <link href="styles/bootstrap.css" rel="stylesheet">
@@ -118,39 +113,39 @@ else {
                     <h3 class="panel-title">Registration</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form" method="post" action="add_user.php">
+                    <form role="form" method="POST" action="add_user.php">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="First Name" name="firstname" type="text" autofocus>
+                                <input class="form-control" placeholder="First Name" name="firstname" type="text" id="firstname" autofocus>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Last Name" name="lastname" type="text" autofocus>
-                            </div>
-
-                            <div class="form-group">
-                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                <input class="form-control" placeholder="Last Name" name="lastname" type="text" id="lastname" autofocus>
                             </div>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="pass" type="password" value="">
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Confirm Password" name="pass" type="password" value="">
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Address" name="address" type="text" value="">
+                                <input class="form-control" placeholder="E-mail" name="email" type="email" id="email" autofocus>
                             </div>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="City" name="city" type="text" value="">
+                                <input class="form-control" placeholder="Password" name="pass" type="password" id="password">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Confirm Password" name="pass" type="password" id="password">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Address" name="address" type="text" id="address">
                             </div>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="State" name="state" type="text" value="">
+                                <input class="form-control" placeholder="City" name="city" type="text" id="city">
                             </div>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="Zip" name="zip" type="text" value="">
+                                <input class="form-control" placeholder="State" name="state" type="text" id="state">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Zip" name="zip" type="text" id="zip">
                             </div>
 
 
@@ -164,5 +159,48 @@ else {
         </div>
     </div>
 </div>
+<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script> -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>'
+   );
+
+}
+
+?>
+
+
+
+
+<!--
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS --
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme --
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript --
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS --
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template --
+    <link href="styles/blog.css" rel="stylesheet">
+    <title>Login</title>
+<body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+-->
