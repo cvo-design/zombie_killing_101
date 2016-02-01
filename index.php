@@ -3,9 +3,6 @@
 <head>
 
     <title>Zombie Killing 101</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -17,11 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
 
 
     <!-- Custom styles for this template -->
-    <link href="styles/blog.css" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
 
 </head>
 
@@ -30,9 +27,9 @@
 <div class="blog-masthead">
     <div class="container">
         <nav class="blog-nav">
-            <a class="blog-nav-item active" href="#">Home</a>
-            <a class="blog-nav-item" href="#">New features</a>
-            <a class="blog-nav-item" href="#">Press</a>
+            <a class="blog-nav-item active" href="index.php">Home</a>
+            <a class="blog-nav-item" href="login.php">Login</a>
+            <a class="blog-nav-item" href="add_user.php">New Member</a>
             <a class="blog-nav-item" href="#">New hires</a>
             <a class="blog-nav-item" href="#">About</a>
         </nav>
@@ -76,7 +73,8 @@
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
             <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
-                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>I've survived it all. A crowd of more than 100 walkers coming at you? Been there. Enter a prison with nothing but a crossbow? Done that. Trust a community of living people only to find out they will eat your cooked flesh? Yeah, that happened.
+                    <br> The ultimate survivor's guidebook is my gift to you. I'll be posting the best tips on how to survive in a world that wants you dead. Sign up and post your stories. You might just save a life. </p>
             </div>
             <div class="sidebar-module">
                 <h4>Archives</h4>
