@@ -28,14 +28,14 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/blog.css" rel="stylesheet">
-    <title>Registration</title>
+    <title>Blog Post</title>
 </head>
 <style>
     .login-panel {
         margin-top: 150px;
 
 </style>
-<body>
+<body background="zombie.jpg">
 
 <div class="container"><!-- container class is used to centered  the body of the browser with some decent width-->
     <div class="row"><!-- row class is used for grid system in Bootstrap-->
@@ -45,7 +45,7 @@
                     <h3 class="panel-title">Blog Post</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form" method="post" action="insert.php">
+                    <form role="form" id="blogform" method="post" action="insert.php">
                         <fieldset>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Title" name="title" type="text" autofocus>
@@ -55,7 +55,14 @@
                             </div>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="Content" name="content" type="text" autofocus>
+                                Content:
+                                <br>
+                                <textarea name="content"  id="content" rows="10" cols="35">
+
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Date" name="blog_date" type="date" autofocus>
                             </div>
 
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="Post" name="register" >
@@ -69,6 +76,6 @@
     </div>
 </div>
 
-</body>
+</body background="zombie.jpg">
 
 </html>

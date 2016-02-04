@@ -13,6 +13,8 @@ CREATE TABLE user
  state VARCHAR (50),
  zip INT (10),
  user_id INT(10) NOT NULL AUTO_INCREMENT,
+ blog_id INT(10),
+ FOREIGN KEY (blog_id) REFERENCES blog(blog_id),
  PRIMARY KEY (user_id)
 ) Engine = InnoDB;
 
@@ -21,6 +23,7 @@ CREATE TABLE blog
  title TEXT NOT NULL,
  summary TEXT NOT NULL,
  content TEXT NOT NULL,
+ blog_date DATE NOT NULL,
  blog_id INT(10) NOT NULL AUTO_INCREMENT,
  PRIMARY KEY(blog_id)
 )   Engine = InnoDB;
