@@ -42,7 +42,7 @@
         <div class="col-md-4 col-md-offset-4"><!--col-md-4 is used to create the no of colums in the grid also use for medimum and large devices-->
             <div class="login-panel panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Registration</h3>
+                    <h3 class="panel-title">Blog Post</h3>
                 </div>
                 <div class="panel-body">
                     <form role="form" method="post" action="insert.php">
@@ -58,7 +58,7 @@
                                 <input class="form-control" placeholder="Content" name="content" type="text" autofocus>
                             </div>
 
-                            <input class="btn btn-lg btn-success btn-block" type="submit" value="register" name="register" >
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Post" name="register" >
 
                         </fieldset>
                     </form>
