@@ -23,7 +23,11 @@ CREATE TABLE blog
  title TEXT NOT NULL,
  summary TEXT NOT NULL,
  content TEXT NOT NULL,
+<<<<<<< Updated upstream
  blog_date DATE NOT NULL,
+=======
+ blog_date TEXT NOT NULL,
+>>>>>>> Stashed changes
  blog_id INT(10) NOT NULL AUTO_INCREMENT,
  PRIMARY KEY(blog_id)
 )   Engine = InnoDB;

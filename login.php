@@ -2,6 +2,7 @@
 require "connection.php";
 if (isset($_POST['email'])) {
     echo "Login true <br><br>";
+print_r($_POST);
 
     $sql_li_stmt = "Select email, password "
         . "From user "
@@ -10,18 +11,18 @@ if (isset($_POST['email'])) {
 
     $x_userName = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 
-    $sqlh_li->bindParam(":email", $x_email);
+    $sqlh_li->bindParam(":email", $x_userName);
     $sqlh_li->execute();
 
 
     $li_result = $sqlh_li->fetch();
-
-    print_r($li_result['password'] . "<br><br>");
-    print_r($li_result['email'] . "<br><br>");
+    //print_r($li_result);
+    //print_r($li_result['password'] . "<br><br>");
+   // print_r($li_result['email'] . "<br><br>");
 
     $hash = $li_result['password'];
-
-
+    echo $hash;
+    print_r($_POST['password']);
     if (password_verify($_POST['password'], $hash)) {
         echo 'Password is valid!';
 
