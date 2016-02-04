@@ -22,7 +22,7 @@ if (isset($_POST['email'])) {
     $hash = $li_result['password'];
 
 
-    if (password_verify($_POST['passWord'], $hash)) {
+    if (password_verify($_POST['password'], $hash)) {
         echo 'Password is valid!';
 
         $_SESSION['LoginStatus'] = true;
