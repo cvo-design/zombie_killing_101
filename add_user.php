@@ -48,7 +48,7 @@ if (isset($_POST['email'])) {
     //prepare the sql statement
     $sqlh = $pdo->prepare($sql_stmt);
 
-    echo("Made IT");
+
     //sanitize the input
     $in_firstname = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
     $in_lastname = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
@@ -75,9 +75,8 @@ if (isset($_POST['email'])) {
 
 
 
-    echo '<div id="newuserstatus">
-        <p>New User Was Successfully entered</p>
-        </div>';
+    header('Location: login.php');
+    exit;
 
 
 }
