@@ -1,7 +1,7 @@
 <?php
 require "dConnect.php";
 
-if (isset($_POST['userName'])) {
+if (isset($_POST['email'])) {
     $pwd = $_POST['passWord'];
 
 

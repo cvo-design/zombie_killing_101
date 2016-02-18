@@ -3,24 +3,24 @@ require "dConnect.php";
 
 
 
-if (isset($_POST['userName'])) {
+if (isset($_POST['email'])) {
     echo "Login true <br><br>";
 
-    $sql_li_stmt = "Select userName, passWord "
+    $sql_li_stmt = "Select email, passWord "
         . "From tb_user "
-        . "where userName = :userName";
+        . "where email = :email";
     $sqlh_li = $pdo->prepare($sql_li_stmt);
 
-    $x_userName = filter_var($_POST['userName'], FILTER_SANITIZE_STRING);
+    $x_email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 
-    $sqlh_li->bindParam(":userName", $x_userName);
+    $sqlh_li->bindParam(":userName", $x_email);
     $sqlh_li->execute();
 
 
     $li_result = $sqlh_li->fetch();
 
     print_r($li_result['passWord'] . "<br><br>");
-    print_r($li_result['userName'] . "<br><br>");
+    print_r($li_result['email'] . "<br><br>");
 
     $hash = $li_result['passWord'];
 
@@ -30,7 +30,7 @@ if (isset($_POST['userName'])) {
 
         $_SESSION['LoginStatus'] = true;
     } else {
-        echo 'Invalid password.';
+        echo '<script>alert("Password Is INVALID")</script>';
     }
 
 }
@@ -87,6 +87,7 @@ if (isset($_POST['userName'])) {
         </div>
     </div>
 </div>
+
 
 <!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
