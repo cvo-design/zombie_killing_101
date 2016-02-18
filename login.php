@@ -13,7 +13,7 @@ if (isset($_POST['email'])) {
 
     $x_email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 
-    $sqlh_li->bindParam(":userName", $x_email);
+    $sqlh_li->bindParam(":email", $x_email);
     $sqlh_li->execute();
 
 
