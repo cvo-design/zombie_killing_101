@@ -8,37 +8,30 @@
 
 if (!$_SESSION['LoginStatus']) {
     echo('
- <div class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand">Jims App</h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li class="active"><a href="index.php">Home</a></li>
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="newUserReg.php">New User</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="#">Home</a>
+            <a class="blog-nav-item" href="login.php">Log In</a>
+            <a class="blog-nav-item" href="newUserReg.php">Register</a>
+        </nav>
+    </div>
+</div>
 ');
 }
 else {
     echo('
 
-     <div class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand">Cover</h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li class="active"><a href="index.php">Home</a></li>
-                            <li><a href="newUserReg.php">New User</a></li>
-                            <li><a href="logout.php">Log Out</a></li>
-                            <li><a href="windowcalls.php">Window Calls</a></li>
-                            <li><a href="the_storm.php">Osiris</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+    <div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="index.php">Home</a>
+            <a class="blog-nav-item" href="logout.php">Log Outs</a>
+            <a class="blog-nav-item" href="#">Post</a>
+            <a class="blog-nav-item" href="#">Your Entries</a>
+        </nav>
+    </div>
+</div>
 
     ');
 }

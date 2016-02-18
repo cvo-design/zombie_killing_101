@@ -49,7 +49,7 @@ if (isset($_POST['userName'])) {
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <title>Registration</title>
+    <title>Log In</title>
 </head>
 <style>
     .login-panel {
@@ -63,10 +63,10 @@ if (isset($_POST['userName'])) {
         <div class="col-md-4 col-md-offset-4"><!--col-md-4 is used to create the no of colums in the grid also use for medimum and large devices-->
             <div class="login-panel panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Registration</h3>
+                    <h3 class="panel-title">Log In</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form" method="POST" action="newUserReg.php">
+                    <form role="form" method="POST" action="login.php">
                         <fieldset>
 
                             <div class="form-group">
@@ -77,11 +77,11 @@ if (isset($_POST['userName'])) {
                                 <input class="form-control" placeholder="Password" name="passWord" type="passWord" value="">
                             </div>
 
-                            <input class="btn btn-lg btn-success btn-block" type="submit" value="register" name="register" >
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Enter" name="register" >
 
                         </fieldset>
                     </form>
-                    <center><b>Already registered ?</b> <br></b><a href="login.php">Login here</a></center><!--for centered text-->
+
                 </div>
             </div>
         </div>

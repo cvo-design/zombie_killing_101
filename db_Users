@@ -2,6 +2,16 @@ CREATE DATABASE IF NOT EXISTS db_users;
 
 USE  db_users;
 
+CREATE TABLE blog
+(
+ title TEXT NOT NULL,
+ summary TEXT NOT NULL,
+ content TEXT NOT NULL,
+ blog_date DATE NOT NULL,
+ blog_id INT(10) NOT NULL AUTO_INCREMENT,
+ PRIMARY KEY(blog_id)
+);
+
 CREATE TABLE tb_user
     (firstName VARCHAR(50),
     lastName VARCHAR(50),
@@ -17,12 +27,3 @@ FOREIGN KEY (blog_id) REFERENCES blog(blog_id),
 PRIMARY KEY (user_ID)
 );
 
-CREATE TABLE blog
-(
- title TEXT NOT NULL,
- summary TEXT NOT NULL,
- content TEXT NOT NULL,
- blog_date DATE NOT NULL,
- blog_id INT(10) NOT NULL AUTO_INCREMENT,
- PRIMARY KEY(blog_id)
-);
