@@ -40,8 +40,7 @@ if (isset($_POST['title'])) {
 
 
     $sqlb_input->execute();
-
-    //header('Location: index.php');
+    header('Location: index.php');
 }
 else
 {
