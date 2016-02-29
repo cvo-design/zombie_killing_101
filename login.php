@@ -26,7 +26,8 @@ if (isset($_POST['email'])) {
 
 
     if (password_verify($_POST['passWord'], $hash)) {
-        echo 'Password is valid!';
+        header("Location: blog_entry.php");
+        //echo 'Password is valid!';
 
         $_SESSION['LoginStatus'] = true;
     } else {
@@ -54,6 +55,19 @@ if (isset($_POST['email'])) {
 <style>
     .login-panel {
         margin-top: 150px;
+    .btn-success
+    {
+        background-color: red;
+    }
+
+    .panel-success>.panel-heading
+    {
+        color: red;
+    }
+    .container
+    {
+    border: 3px solid red;}
+    }
 
 </style>
 <body>

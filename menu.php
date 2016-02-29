@@ -27,7 +27,7 @@ else {
         <nav class="blog-nav">
             <a class="blog-nav-item active" href="index.php">Home</a>
             <a class="blog-nav-item" href="logout.php">Log Outs</a>
-            <a class="blog-nav-item" href="#">Post</a>
+            <a class="blog-nav-item" href="blog_entry.php">Post</a>
             <a class="blog-nav-item" href="#">Your Entries</a>
         </nav>
     </div>

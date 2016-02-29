@@ -9,18 +9,17 @@ require "dConnect.php";
 
 if (isset($_POST['title'])) {
 
-
 //write the sql statement with placeholders
     $sql_input = "INSERT INTO  blog "
-        . " (title, "
+        . "(title, "
         . "summary, "
         . "content, "
-        . "blog_date, "
-        . "VALUES ("
-        . ":title, "
+        . "blog_date) "
+        . "VALUES "
+        . "(:title, "
         . ":summary, "
         . ":content, "
-        . ":blog_date) ";
+        . ":blog_date)";
 
 
 //prepare the squel statement
@@ -40,9 +39,9 @@ if (isset($_POST['title'])) {
     $sqlb_input->bindparam(":blog_date", $blog_date);
 
 
-    $sqlb_input_input->execute();
+    $sqlb_input->execute();
 
-    header('Location: index.php');
+    //header('Location: index.php');
 }
 else
 {
@@ -76,7 +75,7 @@ else
                     <form role="form" id="blogform" method="POST" action="blog_entry.php">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Title" name="title" type="text" autofocus>
+                                <input class="form-control" placeholder="Title" name="title" id="title" type="text" autofocus>
                             </div>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Summary" name="summary" type="text" autofocus>
