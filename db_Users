@@ -13,6 +13,7 @@ CREATE TABLE blog
 );
 
 CREATE TABLE tb_user
+
     (firstName VARCHAR(50),
     lastName VARCHAR(50),
     email VARCHAR (50),
