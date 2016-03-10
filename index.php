@@ -56,8 +56,6 @@ include "menu.php"
 
 
             </div><!-- /.blog-post -->
-
-
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
