@@ -1,9 +1,10 @@
 .btn-success
 {
-    background-color: red;
+    background-image: linear-gradient(to bottom,#A10000 0,#A10000 100%);
 }
 
 .panel-success>.panel-heading
 {
     color: red;
 }
+

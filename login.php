@@ -92,6 +92,7 @@ if (isset($_POST['email'])) {
                             </div>
 
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="Enter" name="register" >
+                            <a class="btn btn-lg btn-success btn-block" href="index.php">Home</a>
 
                         </fieldset>
                     </form>
