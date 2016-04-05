@@ -47,13 +47,26 @@ include "menu.php"
                 <h2 class="blog-post-title">Sample blog post</h2>
                 <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
+                <?php
+// Get info
+$sql_select = "SELECT tb_user.firstName, "
+    ."tb_user.lastName, blog.* "
+    ."FROM blog INNER JOIN tb_user "
+    ."ON blog.blog_id=tb_user.blog_id ";
+echo ("<br>$sql_select<br>"); //For testing
 
-            </div><!-- /.blog-post -->
-
-            <div class="blog-post">
-                <h2 class="blog-post-title">New feature</h2>
-                <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
+$blog_entry = $pdo->query($sql_select);
+// Display articles one  by one
+while ($row = $blog_entry->fetch())
+    echo $blog_entry;
+{
+    echo("<b>".$row['title']."</b><br>");
+    echo("<b>Author: </b>".substr($row['firstName'],0,1).$row['lastName']."<br>");
+    echo ('<fieldset class = "article">');
+    echo("<p>".$row['content']."</p>");
+    echo ('</fieldset><br><br>');
+}
+?>
 
             </div><!-- /.blog-post -->
         </div><!-- /.blog-main -->
