@@ -49,22 +49,22 @@ include "menu.php"
 
                 <?php
 // Get info
-$sql_select = "SELECT tb_user.firstName, "
+/*$sql_select = "SELECT tb_user.firstName, "
     ."tb_user.lastName, blog.* "
-    ."FROM blog INNER JOIN tb_user "
-    ."ON blog.blog_id=tb_user.blog_id ";
-echo ("<br>$sql_select<br>"); //For testing
+    ."FROM tb_user INNER JOIN blog "
+    ."ON tb_user.blog_id=blog.blog_id ";*/
+                $sql_select = "SELECT * FROM blog";
 
 $blog_entry = $pdo->query($sql_select);
+
 // Display articles one  by one
 while ($row = $blog_entry->fetch())
-    echo $blog_entry;
+     echo ("<b>".$row['title']."</b><br>");
+
 {
-    echo("<b>".$row['title']."</b><br>");
+    echo("<b>".$row["title"]."</b><br>");
     echo("<b>Author: </b>".substr($row['firstName'],0,1).$row['lastName']."<br>");
-    echo ('<fieldset class = "article">');
     echo("<p>".$row['content']."</p>");
-    echo ('</fieldset><br><br>');
 }
 ?>
 
