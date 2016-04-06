@@ -49,11 +49,9 @@ include "menu.php"
 
                 <?php
 // Get info
-/*$sql_select = "SELECT tb_user.firstName, "
-    ."tb_user.lastName, blog.* "
-    ."FROM tb_user INNER JOIN blog "
-    ."ON tb_user.blog_id=blog.blog_id ";*/
-                $sql_select = "SELECT * FROM blog";
+$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.* FROM blog LEFT JOIN tb_user ON blog.blog_id = tb_user.blog_id ";
+
+              // $sql_select = "SELECT * FROM blog";
 
 $blog_entry = $pdo->query($sql_select);
 
@@ -62,7 +60,7 @@ while ($row = $blog_entry->fetch())
      echo ("<b>".$row['title']."</b><br>");
 
 {
-    echo("<b>".$row["title"]."</b><br>");
+    echo("<b>".$row['title']."</b><br>");
     echo("<b>Author: </b>".substr($row['firstName'],0,1).$row['lastName']."<br>");
     echo("<p>".$row['content']."</p>");
 }
