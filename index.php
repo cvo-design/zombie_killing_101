@@ -44,26 +44,28 @@ include "menu.php"
         <div class="col-sm-8 blog-main">
 
             <div class="blog-post">
-                <h2 class="blog-post-title">Sample blog post</h2>
-                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-                <?php
-// Get info
-$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.* FROM blog LEFT JOIN tb_user ON blog.blog_id = tb_user.blog_id ";
+              <!--  <h2 class="blog-post-title">Sample blog post</h2>
+                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>-->
+<?php
+// Get
+$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.* FROM blog LEFT JOIN tb_user ON tb_user.user_ID =blog.blog_id  " ;
 
               // $sql_select = "SELECT * FROM blog";
 
 $blog_entry = $pdo->query($sql_select);
 
-// Display articles one  by one
+$cntrA = 5;
 while ($row = $blog_entry->fetch())
-     echo ("<b>".$row['title']."</b><br>");
-
+     //echo ("<b>".$row['title']."</b><br>");
+//echo($row['lastName']);
 {
-    echo("<b>".$row['title']."</b><br>");
-    echo("<b>Author: </b>".substr($row['firstName'],0,1).$row['lastName']."<br>");
+    echo("<h2>".$row['title']."</h2><br>");
+    echo("<strong>".$row['blog_date']."</strong>"."<br>");
+    echo("<b>Author: </b>" .$row['firstName']."&nbsp;".$row['lastName']);
     echo("<p>".$row['content']."</p>");
 }
+
+$cntrA++;
 ?>
 
             </div><!-- /.blog-post -->

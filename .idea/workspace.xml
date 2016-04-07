@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b036eb3-2dc8-4fad-b9e8-cfa4c6df2b3b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_Users" afterPath="$PROJECT_DIR$/db_Users" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="zombie_killing_101.iws" />
@@ -65,7 +66,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+                    <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+                    <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -73,9 +78,28 @@
           <file leaf-file-name="blog_entry.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog_entry.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-                  <folding />
+                <state vertical-scroll-proportion="-9.307693">
+                  <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+                  <folding>
+                    <marker date="1459859228321" expanded="true" signature="232:451" placeholder="INSERT INTO blog" />
+                    <marker date="1459859228321" expanded="true" signature="1147:2003" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2011:2067" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2030:2058" placeholder="{...}" />
+                    <marker date="1459859228321" expanded="true" signature="2074:4608" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2098:4096" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2211:4089" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2312:4078" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2471:4063" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2515:2597" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2638:4044" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2729:4020" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2764:3992" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="2817:2979" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="3032:3187" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="3241:3528" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="3448:3493" placeholder="..." />
+                    <marker date="1459859228321" expanded="true" signature="3581:3735" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -85,7 +109,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-                  <folding />
+                  <folding>
+                    <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+                    <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+                    <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -93,8 +121,8 @@
           <file leaf-file-name="db_Users" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db_Users">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.95327103">
-                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0953271">
+                  <caret line="6" column="6" selection-start-line="4" selection-start-column="0" selection-end-line="14" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -107,13 +135,14 @@
           <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3197158">
-                  <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+                <state vertical-scroll-proportion="1.5701599">
+                  <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
                   <folding>
-                    <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-                    <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-                    <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-                    <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+                    <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+                    <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+                    <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+                    <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+                    <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -235,7 +264,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PhpstormProjects/car_db_vanorden 2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../eng_project_test" />
     <property name="recentsLimit" value="5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -245,7 +274,7 @@
       <recent name="D:\xampp\htdocs\GitHub\zombie_killing_101\styles" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.php">
+  <component name="RunManager" selected="JavaScript Debug.newUserReg.php">
     <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/zombie_killing_101/index.php">
       <method />
     </configuration>
@@ -253,6 +282,9 @@
       <method />
     </configuration>
     <configuration default="false" name="login.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/login.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="newUserReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/zombie_killing_101/newUserReg.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -287,16 +319,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.add_user.php" />
       <item index="2" class="java.lang.String" itemvalue="PHP Script.login.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.newUserReg.php" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.login.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.add_user.php" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.newUserReg.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.login.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.add_user.php" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +381,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459859209606</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="blog_entry">
+      <created>1459979184653</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1459979184653</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -445,10 +485,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -457,7 +498,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+            <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -504,7 +549,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -513,10 +562,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -525,7 +575,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+            <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -572,7 +626,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,10 +639,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -593,7 +652,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+            <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -609,7 +672,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,10 +685,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -630,7 +698,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+            <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,7 +749,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -717,10 +793,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -729,7 +806,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+            <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,10 +827,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -758,7 +840,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,10 +853,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -779,7 +866,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -788,10 +879,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -800,7 +892,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,10 +905,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -821,7 +918,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -830,10 +931,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -842,7 +944,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -851,10 +957,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -863,7 +970,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,10 +983,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="8" selection-start-line="5" selection-start-column="4" selection-end-line="23" selection-end-column="50" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -884,7 +996,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -893,10 +1009,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -905,7 +1022,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,15 +1042,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog_entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1459859228339" expanded="false" signature="9:97" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1459859228339" expanded="true" signature="133:468" placeholder="..." />
+            <marker date="1459859228339" expanded="true" signature="476:890" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -937,6 +1054,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <marker date="1459859228335" expanded="true" signature="62:819" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="613:741" placeholder="..." />
+            <marker date="1459859228335" expanded="true" signature="749:816" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/the_storm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -972,47 +1117,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/the_storm.php">
+    <entry file="file://$PROJECT_DIR$/blog_entry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-9.307693">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <marker date="1459859228321" expanded="true" signature="232:451" placeholder="INSERT INTO blog" />
+            <marker date="1459859228321" expanded="true" signature="1147:2003" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2011:2067" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2030:2058" placeholder="{...}" />
+            <marker date="1459859228321" expanded="true" signature="2074:4608" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2098:4096" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2211:4089" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2312:4078" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2471:4063" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2515:2597" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2638:4044" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2729:4020" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2764:3992" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="2817:2979" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="3032:3187" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="3241:3528" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="3448:3493" placeholder="..." />
+            <marker date="1459859228321" expanded="true" signature="3581:3735" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db_Users">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95327103">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0953271">
+          <caret line="6" column="6" selection-start-line="4" selection-start-column="0" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3197158">
-          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+        <state vertical-scroll-proportion="1.5701599">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <marker date="1459972758534" expanded="true" signature="1649:1785" placeholder="SELECT tb_us... " />
-            <marker date="1459972758534" expanded="true" signature="1821:1839" placeholder="SELECT * FRO... blog" />
-            <marker date="1459972758534" expanded="true" signature="2303:2417" placeholder="..." />
-            <marker date="1459972758534" expanded="true" signature="2365:2417" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="1632:1742" placeholder="SELECT tb_us... blog" />
+            <marker date="1459991936957" expanded="true" signature="1781:1799" placeholder="SELECT * FRO... blog" />
+            <marker date="1459991936957" expanded="true" signature="2182:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2333:2447" placeholder="..." />
+            <marker date="1459991936957" expanded="true" signature="2395:2447" placeholder="..." />
           </folding>
         </state>
       </provider>

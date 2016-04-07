@@ -8,6 +8,8 @@ USE  db_users;
    summary TEXT NOT NULL,
    content TEXT NOT NULL,
    blog_date DATE NOT NULL,
+   user_ID INT(6);
+   FOREIGN KEY (user_ID) REFERENCES tb_user(user_ID);
    blog_id INT(10) NOT NULL AUTO_INCREMENT,
    PRIMARY KEY(blog_id)
   );
@@ -23,8 +25,8 @@ CREATE TABLE tb_user
     state VARCHAR (50),
     zip VARCHAR (10),
     blog_id INT(10),
-FOREIGN KEY (blog_id) REFERENCES blog(blog_id),
     user_ID  int(6) NOT NULL  AUTO_INCREMENT,
 PRIMARY KEY (user_ID)
 );
 
+FOREIGN KEY (blog_id) REFERENCES blog(blog_id),
