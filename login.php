@@ -30,6 +30,7 @@ if (isset($_POST['email'])) {
         //echo 'Password is valid!';
 
         $_SESSION['LoginStatus'] = true;
+        $_SESSION['user_ID'] = $li_result['user_ID'];
     } else {
         echo '<script>alert("Password Is INVALID")</script>';
     }
