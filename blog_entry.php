@@ -6,16 +6,19 @@
  * Time: 6:33 AM
  */
 require "dConnect.php";
+$_SESSION['user_ID'];
 
 if (isset($_POST['title'])) {
 
 //write the sql statement with placeholders
     $sql_input = "INSERT INTO  blog "
+        . "(user_ID, "
         . "(title, "
         . "summary, "
         . "content, "
         . "blog_date) "
         . "VALUES "
+        . "(:user_ID, "
         . "(:title, "
         . ":summary, "
         . ":content, "
@@ -27,12 +30,14 @@ if (isset($_POST['title'])) {
 
 
 //sanitize data
+    $user_ID = $_SESSION['user_ID'];
     $title = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
     $summary = filter_var($_POST['summary'], FILTER_SANITIZE_STRING);
     $content = filter_var($_POST['content'], FILTER_SANITIZE_STRING);
     $blog_date = filter_var($_POST['blog_date'], FILTER_SANITIZE_STRING);
 
 //bind parameters
+    $sqlb_input->bindparam(":user_ID", $user_ID);
     $sqlb_input->bindparam(":title", $title);
     $sqlb_input->bindparam(":summary", $summary);
     $sqlb_input->bindparam(":content", $content);
@@ -90,7 +95,7 @@ else
                             <div class="form-group">
                                 <input class="form-control" placeholder="Date" name="blog_date" type="date" autofocus>
                             </div>
-
+                            <input type="hidden" id="user_ID" name="user_ID" value="">
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="Post" name="register" >
                             <a class="btn btn-lg btn-success btn-block" href="index.php">Home</a>
 

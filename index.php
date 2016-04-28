@@ -48,7 +48,7 @@ include "menu.php"
                 <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>-->
 <?php
 // Get
-$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.* FROM tb_user INNER JOIN blog  ON tb_user.user_ID =blog.blog_id  " ;
+$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.* FROM tb_user LEFT JOIN blog  ON tb_user.user_ID  = blog.user_ID " ;
 
               // $sql_select = "SELECT * FROM blog";
 
