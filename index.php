@@ -48,19 +48,23 @@ include "menu.php"
                 <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>-->
 <?php
 // Get
-$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.* FROM tb_user LEFT JOIN blog  ON tb_user.user_ID  = blog.user_ID " ;
+$sql_select = "SELECT tb_user.firstName,tb_user.lastName, blog.title, blog.summary, blog.content, blog_date FROM tb_user INNER JOIN blog  ON tb_user.user_ID  = blog.user_ID " ;
 
               // $sql_select = "SELECT * FROM blog";
 
 $blog_entry = $pdo->query($sql_select);
 
 $cntrA = 5;
+
+//$row=$blog_entry->fetch();
 while ($row = $blog_entry->fetch())
-     //echo ("<b>".$row['title']."</b><br>");
+    // echo ("<b>".$row['title']."</b><br>");
 //echo($row['lastName']);
+//print_r($row);
 {
-    echo("<h2>".$row['title']."</h2><br>");
+    echo("<h1>".$row['title']."</h1><br>");
     echo("<strong>".$row['blog_date']."</strong>"."<br>");
+    echo("<strong>Summary: </strong>".$row['summary']."<br>");
     echo("<b>Author: </b>" .$row['firstName']."&nbsp;".$row['lastName']);
     echo("<p>".$row['content']."</p>");
 }

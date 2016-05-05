@@ -6,7 +6,7 @@ require "dConnect.php";
 if (isset($_POST['email'])) {
     echo "Login true <br><br>";
 
-    $sql_li_stmt = "Select email, passWord "
+    $sql_li_stmt = "Select email, passWord, user_ID "
         . "From tb_user "
         . "where email = :email";
     $sqlh_li = $pdo->prepare($sql_li_stmt);
@@ -26,11 +26,15 @@ if (isset($_POST['email'])) {
 
 
     if (password_verify($_POST['passWord'], $hash)) {
-        header("Location: blog_entry.php");
+
         //echo 'Password is valid!';
 
         $_SESSION['LoginStatus'] = true;
         $_SESSION['user_ID'] = $li_result['user_ID'];
+        //$_SESSION['user_ID'] = 7;
+        header("Location: blog_entry.php");
+
+        echo '<script>alert('.$_SESSION ['user_ID'].'</script>';
     } else {
         echo '<script>alert("Password Is INVALID")</script>';
     }

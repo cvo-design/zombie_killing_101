@@ -29,4 +29,6 @@ CREATE TABLE tb_user
 PRIMARY KEY (user_ID)
 );
 
-FOREIGN KEY (blog_id) REFERENCES blog(blog_id),
+INSERT INTO tb_user
+(firstName, lastName, email, passWord, address, city, state, zip, blog_id, user_ID)
+VALUE ("John", "Doe", "admin", "fvccAdmin42!", "123 Hack your Life", "Gary", "IN", "64601", "1", "1"),;

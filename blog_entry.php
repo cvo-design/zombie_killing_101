@@ -6,20 +6,20 @@
  * Time: 6:33 AM
  */
 require "dConnect.php";
-$_SESSION['user_ID'];
 
+print_r($_SESSION);
 if (isset($_POST['title'])) {
 
 //write the sql statement with placeholders
     $sql_input = "INSERT INTO  blog "
         . "(user_ID, "
-        . "(title, "
+        . "title, "
         . "summary, "
         . "content, "
         . "blog_date) "
         . "VALUES "
         . "(:user_ID, "
-        . "(:title, "
+        . ":title, "
         . ":summary, "
         . ":content, "
         . ":blog_date)";
@@ -31,6 +31,8 @@ if (isset($_POST['title'])) {
 
 //sanitize data
     $user_ID = $_SESSION['user_ID'];
+    //$user_ID = 7;
+    print_r($_POST);
     $title = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
     $summary = filter_var($_POST['summary'], FILTER_SANITIZE_STRING);
     $content = filter_var($_POST['content'], FILTER_SANITIZE_STRING);
@@ -43,9 +45,15 @@ if (isset($_POST['title'])) {
     $sqlb_input->bindparam(":content", $content);
     $sqlb_input->bindparam(":blog_date", $blog_date);
 
-
+try {
     $sqlb_input->execute();
-    header('Location: index.php');
+    //exec("insert into blog (user_id, title) VALUE (7, 'howdy')");
+    //header('Location: index.php');
+    echo('Made it here');
+}catch(exception $e){
+    echo $e->getMessage();
+
+}
 }
 else
 {

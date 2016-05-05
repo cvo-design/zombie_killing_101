@@ -4,7 +4,7 @@ try
 {
     $pdo = new PDO("mysql:host=localhost;dbname=db_users;",'root','');
     echo "Good database connection <br>";
-session_start();
+
 }
 catch (PDOException $e)
 {
@@ -12,7 +12,7 @@ catch (PDOException $e)
 
 }
 
-
+session_start();
 
 
 
