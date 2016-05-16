@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * Created by PhpStorm.
  * User: Chris VanOrden
@@ -28,7 +30,7 @@ else {
             <a class="blog-nav-item active" href="index.php">Home</a>
             <a class="blog-nav-item" href="logout.php">Log Out</a>
             <a class="blog-nav-item" href="blog_entry.php">Post</a>
-            <a class="blog-nav-item" href="#">Your Entries</a>
+            <a class="blog-nav-item" href="entry_delete.php">Your Entries</a>
         </nav>
     </div>
 </div>

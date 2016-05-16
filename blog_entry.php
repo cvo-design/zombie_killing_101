@@ -32,7 +32,7 @@ if (isset($_POST['title'])) {
 //sanitize data
     $user_ID = $_SESSION['user_ID'];
     //$user_ID = 7;
-    print_r($_POST);
+    //print_r($_POST);
     $title = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
     $summary = filter_var($_POST['summary'], FILTER_SANITIZE_STRING);
     $content = filter_var($_POST['content'], FILTER_SANITIZE_STRING);
@@ -48,8 +48,8 @@ if (isset($_POST['title'])) {
 try {
     $sqlb_input->execute();
     //exec("insert into blog (user_id, title) VALUE (7, 'howdy')");
-    //header('Location: index.php');
-    echo('Made it here');
+    header('Location: index.php');
+    //echo('Made it here');
 }catch(exception $e){
     echo $e->getMessage();
 

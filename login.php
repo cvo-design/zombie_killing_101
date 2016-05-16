@@ -89,7 +89,7 @@ if (isset($_POST['email'])) {
                         <fieldset>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                <input class="form-control" placeholder="E-mail" name="email" type="text" autofocus>
                             </div>
 
                             <div class="form-group">

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 
 <?php
-require "dConnect.php";  //Database and Session_Start
+require "dConnect.php";
 
-// Don't allow users to see this page without being logged in
 if(!isset($_SESSION['LoginStatus']))
 {
     header("Location: index.php");
@@ -43,16 +42,14 @@ include "menu.php";
             <h3>Manage your blog articles</h3>
 
             <?php
-            // Do on third pass
+
             If (isset($_POST['blog_delete']))
             {
-                //echo("BlogID: ".$_POST['editID']);  // For testing
 
-                // Use ArticleID to delete the selected blog
                 $sql_delete = "DELETE FROM blog "
                     ."WHERE blog_id ='".$_POST['edit_ID']."'";
 
-                //echo ("<br>$sql_delete<br>"); //For testing
+
 
                 $result = $pdo->query($sql_delete);
 
@@ -78,7 +75,7 @@ include "menu.php";
                 {
                     $sql_select = "SELECT tb_user.firstName, "
                         . "tb_user.lastName, blog.* "
-                        . "FROM blog LEFT JOIN tb_user "
+                        . "FROM blog INNER JOIN tb_user "
                         . "ON blog.user_ID=tb_user.user_ID "
                         . "And blog.user_ID='".$_SESSION['user_ID']."'";
                 }
@@ -116,7 +113,7 @@ include "menu.php";
                 $sql_select = "SELECT tb_user.firstName, "
                     . "tb_user.lastName, blog.* "
                     . "FROM blog LEFT JOIN tb_user "
-                    . "ON blog.user_ID=tb_user.user_ID "
+                    . "ON tb_user.user_ID=blog.user_ID "
                     . "And blog.user_ID='".$_SESSION['edit_ID']."'";
                 //echo ("<br>$sql_select<br>"); //For testing
 

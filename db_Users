@@ -2,18 +2,6 @@ CREATE DATABASE IF NOT EXISTS db_users;
 
 USE  db_users;
 
-  CREATE TABLE blog
-  (
-   title TEXT NOT NULL,
-   summary TEXT NOT NULL,
-   content TEXT NOT NULL,
-   blog_date DATE NOT NULL,
-   user_ID INT(6);
-   FOREIGN KEY (user_ID) REFERENCES tb_user(user_ID);
-   blog_id INT(10) NOT NULL AUTO_INCREMENT,
-   PRIMARY KEY(blog_id)
-  );
-
 CREATE TABLE tb_user
 
     (firstName VARCHAR(50),
@@ -29,6 +17,17 @@ CREATE TABLE tb_user
 PRIMARY KEY (user_ID)
 );
 
-INSERT INTO tb_user
-(firstName, lastName, email, passWord, address, city, state, zip, blog_id, user_ID)
-VALUE ("John", "Doe", "admin", "fvccAdmin42!", "123 Hack your Life", "Gary", "IN", "64601", "1", "1"),;
+
+  CREATE TABLE blog
+  (
+   title TEXT NOT NULL,
+   summary TEXT NOT NULL,
+   content TEXT NOT NULL,
+   blog_date DATE NOT NULL,
+   user_ID INT(6),
+   FOREIGN KEY (user_ID) REFERENCES tb_user(user_ID),
+   blog_id INT(10) NOT NULL AUTO_INCREMENT,
+   PRIMARY KEY(blog_id)
+  );
+
+
